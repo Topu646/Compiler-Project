@@ -1,0 +1,29 @@
+//asfasf
+safasf
+//
+
+## this is single line comment
+int main(){
+	purno a,b, c;
+	vogno d;
+	string x, y;
+	a=56 , b= 45;
+	d = 4.76 ;
+	if ( a <= b and c!= a)
+	{
+		cout<< a;
+	}else
+	{
+		cin >> c;
+		cout << c;
+	}
+
+}
+
+func test(){
+	loop 1..5
+	{
+		cout << "hello";
+	}
+}
+

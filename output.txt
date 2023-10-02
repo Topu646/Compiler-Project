@@ -1,0 +1,27 @@
+Multi Line Comment detected
+
+Single Line Comment detected
+Single Line Comment detected
+
+Datatype  identifier ;
+Datatype  identifier ;
+identifier  identifier ..identifier 
+
+
+Number of tokens:
+Identfiers=5
+arithmatic_operator=0
+unary_operator=0
+_logical_operator=0
+relational_operator=0
+assignment_operator=0
+library_function=0
+datatype=2
+loop=0
+conditional_statement=0
+integer=0
+floatnum=0
+doublenum=0
+Keywords=0
+Parenthesis=0
+ 
