@@ -3,10 +3,11 @@ safasf
 //
 
 ## this is single line comment
-int main(){
+purno main(){
 	purno a,b, c;
 	vogno d;
-	string x, y;
+	string x ;
+	purno x;
 	a=56 , b= 45;
 	d = 4.76 ;
 	if ( a <= b and c!= a)

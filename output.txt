@@ -1,27 +1,37 @@
-Multi Line Comment detected
+Multi Line Comment 
 
-Single Line Comment detected
-Single Line Comment detected
+Single Line Comment 
+identifier  keyword Parenthesis Parenthesis Parenthesis 
+	Datatype  identifier ,identifier , identifier ;
+	Datatype  identifier ;
+	Datatype  identifier , identifier ;
+	identifier assignment_operator Integer  , identifier assignment_operator  Integer ;
+	identifier  assignment_operator  Float  ;
+	conditional_statement  Parenthesis  identifier  relational_operator  identifier  logical_operator  identifier relational_operator  identifier Parenthesis 
+	Parenthesis 
+		library_function :  identifier ;
+	Parenthesis conditional_statement 
+	Parenthesis 
+		library_function :  identifier ;
+		library_function :  identifier ;
+	Parenthesis 
 
-Datatype  identifier ;
-Datatype  identifier ;
-identifier  identifier ..identifier 
+Parenthesis 
+
+user_function  identifier Parenthesis Parenthesis Parenthesis 
+	Loop 
+	Parenthesis 
+		library_function :  Literal;
+	Parenthesis 
+Parenthesis 
 
 
 Number of tokens:
-Identfiers=5
-arithmatic_operator=0
-unary_operator=0
-_logical_operator=0
-relational_operator=0
-assignment_operator=0
-library_function=0
-datatype=2
-loop=0
-conditional_statement=0
-integer=0
-floatnum=0
-doublenum=0
-Keywords=0
-Parenthesis=0
- 
+
+Identfiers = 18
+Statements = 9
+User function = 1
+Datatype = 3
+Loop = 1
+Conditional statement = 2
+Keywords = 1

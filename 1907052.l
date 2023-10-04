@@ -5,6 +5,21 @@
 
 int identifier = 0,keyword = 0,user_func = 0,datatype = 0,loop = 0,cndstatement = 0,statement = 0;
 
+struct Symbol {
+    char name[256];
+};
+
+struct Symbol symbol_table[1000];
+int symbol_count = 0;
+
+int isSymbolDeclared(char* name) {
+    for (int i = 0; i < symbol_count; i++) {
+        if (strcmp(symbol_table[i].name, name) == 0) {
+            return 1;
+        }
+    }
+    return 0; 
+}
 
 %}
 D_type "purno"|"vogno"|"string"
@@ -114,7 +129,8 @@ par "("|")"|"{"|"}"|"["|"]"
 
 {identifier} {
 	printf("identifier ");
-	identifier++;
+	identifier++; 
+	
 }
 
 %%

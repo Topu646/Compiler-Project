@@ -458,8 +458,23 @@ char *yytext;
 
 int identifier = 0,keyword = 0,user_func = 0,datatype = 0,loop = 0,cndstatement = 0,statement = 0;
 
+struct Symbol {
+    char name[256];
+};
 
-#line 463 "lex.yy.c"
+struct Symbol symbol_table[1000];
+int symbol_count = 0;
+
+int isSymbolDeclared(char* name) {
+    for (int i = 0; i < symbol_count; i++) {
+        if (strcmp(symbol_table[i].name, name) == 0) {
+            return 1;
+        }
+    }
+    return 0; 
+}
+
+#line 478 "lex.yy.c"
 
 /* Macros after this point can all be overridden by user definitions in
  * section 1.
@@ -610,9 +625,9 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
 
-#line 44 "1907052.l"
+#line 59 "1907052.l"
 
-#line 616 "lex.yy.c"
+#line 631 "lex.yy.c"
 
 	if ( yy_init )
 		{
@@ -697,17 +712,17 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 45 "1907052.l"
+#line 60 "1907052.l"
 printf("Multi Line Comment ");
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 46 "1907052.l"
+#line 61 "1907052.l"
 printf("Single Line Comment ");
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 47 "1907052.l"
+#line 62 "1907052.l"
 {
 	printf(";");
 	statement++;
@@ -715,14 +730,14 @@ YY_RULE_SETUP
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 51 "1907052.l"
+#line 66 "1907052.l"
 {
 	printf("Literal");
 }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 54 "1907052.l"
+#line 69 "1907052.l"
 {
 	printf("Datatype ");
 	datatype++;
@@ -730,7 +745,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 60 "1907052.l"
+#line 75 "1907052.l"
 {
 	printf("keyword ");
 	keyword++;
@@ -738,7 +753,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 64 "1907052.l"
+#line 79 "1907052.l"
 {
 	printf("Parenthesis ");
 	
@@ -746,7 +761,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 69 "1907052.l"
+#line 84 "1907052.l"
 {
 	printf("arithmatic_operator ");
 	
@@ -754,7 +769,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 73 "1907052.l"
+#line 88 "1907052.l"
 {
 	printf("unary_operator ");
 	
@@ -762,7 +777,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 77 "1907052.l"
+#line 92 "1907052.l"
 {
 	printf("logical_operator ");
 	
@@ -770,7 +785,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 81 "1907052.l"
+#line 96 "1907052.l"
 {
 	printf("relational_operator ");
 	
@@ -778,7 +793,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 85 "1907052.l"
+#line 100 "1907052.l"
 {
 	printf("assignment_operator ");
 	
@@ -786,7 +801,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 89 "1907052.l"
+#line 104 "1907052.l"
 {
 	printf("library_function : ");
 	
@@ -794,7 +809,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 93 "1907052.l"
+#line 108 "1907052.l"
 {
 	printf("user_function ");
 	user_func++;
@@ -802,7 +817,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 97 "1907052.l"
+#line 112 "1907052.l"
 {
 	printf("Loop ");
 	loop++;
@@ -810,7 +825,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 101 "1907052.l"
+#line 116 "1907052.l"
 {
 	printf("conditional_statement ");
 	cndstatement++;
@@ -818,7 +833,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 106 "1907052.l"
+#line 121 "1907052.l"
 {
 	
 	printf("Integer ");
@@ -826,7 +841,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 110 "1907052.l"
+#line 125 "1907052.l"
 {
 	
 	printf("Float ");
@@ -834,18 +849,19 @@ YY_RULE_SETUP
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 115 "1907052.l"
+#line 130 "1907052.l"
 {
 	printf("identifier ");
-	identifier++;
+	identifier++; 
+	
 }
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 120 "1907052.l"
+#line 136 "1907052.l"
 ECHO;
 	YY_BREAK
-#line 849 "lex.yy.c"
+#line 865 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1731,7 +1747,7 @@ int main()
 	return 0;
 	}
 #endif
-#line 120 "1907052.l"
+#line 136 "1907052.l"
 
 
 int yywrap()
