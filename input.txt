@@ -3,12 +3,11 @@ safasf
 //
 
 ## this is single line comment
+## asf
 purno main(){
-	purno a,b, c;
+	purno a,b;
 	vogno d;
 	string x ;
-	purno x;
-	a=56 , b= 45;
 	d = 4.76 ;
 	if ( a <= b and c!= a)
 	{

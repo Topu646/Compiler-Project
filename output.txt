@@ -1,11 +1,11 @@
 Multi Line Comment 
 
 Single Line Comment 
-identifier  keyword Parenthesis Parenthesis Parenthesis 
-	Datatype  identifier ,identifier , identifier ;
+Single Line Comment 
+Datatype  keyword Parenthesis Parenthesis Parenthesis 
+	Datatype  identifier ,identifier ;
 	Datatype  identifier ;
-	Datatype  identifier , identifier ;
-	identifier assignment_operator Integer  , identifier assignment_operator  Integer ;
+	Datatype  identifier  ;
 	identifier  assignment_operator  Float  ;
 	conditional_statement  Parenthesis  identifier  relational_operator  identifier  logical_operator  identifier relational_operator  identifier Parenthesis 
 	Parenthesis 
@@ -25,13 +25,3 @@ user_function  identifier Parenthesis Parenthesis Parenthesis
 	Parenthesis 
 Parenthesis 
 
-
-Number of tokens:
-
-Identfiers = 18
-Statements = 9
-User function = 1
-Datatype = 3
-Loop = 1
-Conditional statement = 2
-Keywords = 1

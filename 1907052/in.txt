@@ -1,0 +1,83 @@
+## Single Line comment
+//This is
+a
+multi line comment
+//
+
+
+#include < header.h >
+#include < arektaheader.h >
+
+func abc(a,b,a)
+{
+	purno a;
+	vogno b,c,a;
+	a= 6;
+	print(a);
+	b= 7*5;
+	if(b < 50)
+	{
+		print(b);
+	}else
+	{
+		print(a);
+	}
+
+	
+
+}
+
+func test()
+{
+	sin(30);
+	cos(30);
+	tan(45);
+	log10(100);
+	ln(3);
+	OddEven(51);
+	OddEven(b);
+	fact(5);
+}
+
+main
+{
+	
+	purno x,y,z;
+	purno x,xx,yy;
+	x= 50/10;
+	xx = x;
+	
+	print(xx);
+	ab = 8;
+	print(ab);
+	
+	xx = 52;
+	print(xx);
+
+
+	for ( b = 2 , b <= 15 , b up 2 ) 
+	{	   
+		print(b);
+		
+	}
+	for(a = 10, a >= 0, a down 1)
+	{
+		print(x);
+	}
+	purno a1 ;
+	a1=4;
+ 	while ( a1 < 15, 2 )
+	{
+        	print(a1);
+	}
+	
+	a1=2;
+	switch(a1)
+	{
+		2  :   {b=2;}
+		4 :   {b = 4;}
+		default : {b = 1; }
+	}
+	print(b);
+
+}

@@ -1,0 +1,85 @@
+Single Line Comment 
+Multi Line Comment
+
+Header File Found!
+
+Header File Found!
+function parameter: a
+
+function parameter: b
+
+parameter a already exists!
+Variable a declared!
+Variable b declared!
+Variable c declared!
+Variable a already declared!
+
+Value of the variable a:  6	
+
+Value of the variable b:  35	
+
+Value of the variable a:  6	
+
+Condition is true in IF
+
+Function abc Ended successfully!
+Value of Sin(30) is 0.500001
+Value of Cos(30) is 0.866025
+Value of Tan(45) is 1.000004
+Value of Log10(100) is 2.000000
+Value of ln(3) is 1.098612
+51 is odd
+35 is odd
+Factorial of 5 is 120
+Function test Ended successfully!
+Variable x declared!
+Variable y declared!
+Variable z declared!
+Variable x already declared!
+Variable xx declared!
+Variable yy declared!
+
+Value of the variable xx:  5	
+
+ab Not declared
+Can't print ab, Value is not declared.
+
+Value of the variable xx:  52	
+
+Value of the variable b:  35	
+For Loop value at 2
+For Loop value at 4
+For Loop value at 6
+For Loop value at 8
+For Loop value at 10
+For Loop value at 12
+For Loop value at 14
+
+
+Value of the variable x:  5	
+For loop value at 10
+For loop value at 9
+For loop value at 8
+For loop value at 7
+For loop value at 6
+For loop value at 5
+For loop value at 4
+For loop value at 3
+For loop value at 2
+For loop value at 1
+For loop value at 0
+
+Variable a1 declared!
+
+Value of the variable a1:  4	
+While loop value of variable a1 : 6
+While loop value of variable a1 : 8
+While loop value of variable a1 : 10
+While loop value of variable a1 : 12
+While loop value of variable a1 : 14
+
+Executed Case 2
+
+Value of the variable b:  1	
+
+Program successfully ended
